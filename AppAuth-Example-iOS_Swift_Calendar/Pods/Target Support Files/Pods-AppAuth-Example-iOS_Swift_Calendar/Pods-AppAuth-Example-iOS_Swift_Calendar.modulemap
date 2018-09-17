@@ -1,0 +1,6 @@
+framework module Pods_AppAuth_Example_iOS_Swift_Calendar {
+  umbrella header "Pods-AppAuth-Example-iOS_Swift_Calendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

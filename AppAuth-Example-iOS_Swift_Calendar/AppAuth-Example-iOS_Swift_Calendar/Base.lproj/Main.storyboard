@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rvo-HL-7Aq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xvP-1f-ahA">
+            <objects>
+                <viewController id="rvo-HL-7Aq" customClass="ViewController" customModule="KKDayMailApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shw-cq-2Kz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-ib-vbe">
+                                <rect key="frame" x="6" y="6" width="363" height="234"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-qi-4S7">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                        <state key="normal" title="authWithAutoCodeExchange"/>
+                                        <connections>
+                                            <action selector="authWithAutoCodeExchange:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="f9w-is-8lM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bt-Ob-TjF">
+                                        <rect key="frame" x="0.0" y="34" width="154" height="30"/>
+                                        <state key="normal" title="authNoCodeExchange"/>
+                                        <connections>
+                                            <action selector="authNoCodeExchange:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="e9i-rU-11x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCV-gb-GfH">
+                                        <rect key="frame" x="0.0" y="68" width="101" height="30"/>
+                                        <state key="normal" title="codeExchange"/>
+                                        <connections>
+                                            <action selector="codeExchange:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="HmY-Ud-vUE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-ze-wzg">
+                                        <rect key="frame" x="0.0" y="102" width="101" height="30"/>
+                                        <state key="normal" title="clearAuthState"/>
+                                        <connections>
+                                            <action selector="clearAuthState:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="yT2-PB-Bf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-fh-AwS">
+                                        <rect key="frame" x="0.0" y="136" width="60" height="30"/>
+                                        <state key="normal" title="clearLog"/>
+                                        <connections>
+                                            <action selector="clearLog:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="gcl-4i-b7b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19L-nO-lGi">
+                                        <rect key="frame" x="0.0" y="170" width="56" height="30"/>
+                                        <state key="normal" title="userinfo"/>
+                                        <connections>
+                                            <action selector="userInfo:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="wp1-tD-9xL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iw-A7-qTm">
+                                        <rect key="frame" x="0.0" y="204" width="62" height="30"/>
+                                        <state key="normal" title="Calendar"/>
+                                        <connections>
+                                            <action selector="calendar:" destination="rvo-HL-7Aq" eventType="touchUpInside" id="Hwd-O1-mV3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="I17-QG-TfR"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csa-us-84i">
+                                <rect key="frame" x="6" y="246" width="363" height="415"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="csa-us-84i" firstAttribute="leading" secondItem="qPT-Ek-DQC" secondAttribute="leading" constant="6" id="Awg-Lz-8U7"/>
+                            <constraint firstItem="qPT-Ek-DQC" firstAttribute="trailing" secondItem="zRE-ib-vbe" secondAttribute="trailing" constant="6" id="Ck8-Nn-odO"/>
+                            <constraint firstItem="csa-us-84i" firstAttribute="top" secondItem="zRE-ib-vbe" secondAttribute="bottom" constant="6" id="Nvx-yK-S1F"/>
+                            <constraint firstItem="qPT-Ek-DQC" firstAttribute="trailing" secondItem="csa-us-84i" secondAttribute="trailing" constant="6" id="c0c-UZ-AfH"/>
+                            <constraint firstItem="zRE-ib-vbe" firstAttribute="leading" secondItem="qPT-Ek-DQC" secondAttribute="leading" constant="6" id="kQe-H0-Vrc"/>
+                            <constraint firstItem="zRE-ib-vbe" firstAttribute="top" secondItem="Shw-cq-2Kz" secondAttribute="top" constant="6" id="pkl-bn-dHZ"/>
+                            <constraint firstItem="qPT-Ek-DQC" firstAttribute="bottom" secondItem="csa-us-84i" secondAttribute="bottom" constant="6" id="wXo-66-KUp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qPT-Ek-DQC"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextField" destination="csa-us-84i" id="pu5-Mg-6yR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pp-R8-Kon" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
